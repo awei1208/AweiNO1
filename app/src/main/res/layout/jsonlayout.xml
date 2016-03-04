@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="年份"
+        android:id="@+id/textJsonYear"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textColor="#f97171"
+        android:layout_below="@+id/textJson_ID"
+        android:layout_alignEnd="@+id/textJsonSong" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="名字"
+        android:id="@+id/textJSONname"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#948888"
+        android:layout_below="@+id/textJsonSong"
+        android:layout_alignStart="@+id/textJsonWeeks" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageSongPhoto"
+        android:layout_below="@+id/textJson_ID"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/smalllogo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="歌名"
+        android:id="@+id/textJsonSong"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#64b081"
+        android:layout_below="@+id/textJsonWeeks"
+        android:layout_alignEnd="@+id/textJSONname" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="暢銷第一名多久"
+        android:id="@+id/textJsonWeeks"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#4ea0c6"
+        android:layout_below="@+id/textJsonYear"
+        android:layout_toEndOf="@+id/imageSongPhoto"
+        android:layout_marginStart="50dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="ID"
+        android:id="@+id/textJson_ID"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#ffa806"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textJsonSong" />
+
+</RelativeLayout>
